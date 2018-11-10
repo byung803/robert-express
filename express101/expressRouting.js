@@ -7,7 +7,6 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send(`<h1>Welcome to home GET page</h1>`)
-
 })
 
 app.post('/', (req, res) => {
@@ -15,11 +14,11 @@ app.post('/', (req, res) => {
 })
 
 app.delete('/', (req, res) => {
-
+    res.send(`<h1>Welcome to home DELETE page</h1>`)
 })
 
 app.put('/', (req, res) => {
-
+    res.send(`<h1>Welcome to home PUT page</h1>`)
 })
 
 app.listen(3000, () => {
